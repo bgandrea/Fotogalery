@@ -1,0 +1,118 @@
+
+body{
+    background-color: rgb(183, 199, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100vh; 
+
+
+}
+main{
+   width: 700px;
+   
+   
+}
+#focim{
+    text-align: center;
+    color: brown;
+    font-size: 2em;
+}
+.kontener{
+    width: 700px;
+    height: 450px;
+    display: flex;
+    background-color: rgb(247, 250, 252);
+    box-shadow: 0px 0px 10px 10px rgb(204, 204, 203) inset;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fokep{
+    display: flex;
+    position: relative;
+    margin: 0;
+    
+    
+} 
+
+#feliratok{
+    position: absolute;
+    bottom: 0px;
+    width: 600px;
+    background-color: rgba(122, 122, 122, 0.8);
+    color: white;
+    padding: 5px 20px;
+    box-sizing: border-box;
+
+}
+#feliratok  p{
+    margin:0 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+#jobb{
+   transform: rotate(180deg) ;
+}
+
+
+#thumbnails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: auto;  /*-----------------------------*/
+}
+
+.thumbnail{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    overflow: hidden;
+    margin-bottom: 10px;  /*-----------------------------*/
+}
+
+.thumbnail img{ 
+    height: 100%;
+}
+
+h6 {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0px 13px 20px -3px rgba(0,0,0,0.75);
+    text-align: center;
+    height: 2em;
+    width: 46px;
+    visibility: hidden;
+}
+
+.thumbnail:hover {
+    border: brown solid 3px;
+    box-shadow: 0px 25px 20px -3px rgba(0,0,0,0.75);
+    transform: scale(1.2) translate(0,-15%);
+    cursor: pointer;
+}
+
+section:hover h6{
+   visibility: visible;
+}
+
+/*----------------------------------------*/
+.selected {
+    border-color: blue;
+    box-shadow: 4px 4px 4px 2px rgba(0, 140, 186, 0.5);
+}
+/*----------------------------------------*/
