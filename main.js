@@ -94,7 +94,7 @@ let loadImage = (ind) => {
     // kiválasztás törlése
     for (let i = 0; i < photodata.length; i++){
         document.getElementsByClassName('thumbnail')[i].classList.remove('selected');
-        console.log(currentPhoto)
+        
     }
     // kiválasztás megjelenítése
     document.getElementsByClassName('thumbnail')[currentPhoto].classList.add('selected');
